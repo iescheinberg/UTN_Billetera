@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------------------------------ BODY --------------------------------------------------------*/
+body{
+    background-color: #f6f6f6;
+    font-family: 'Poppins', sans-serif;
+}
+/* ----------------------------------------------------- CABECERA -----------------------------------------------------*/
+.cabecera{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* ------------------------------------------------- BOTÓN MODO NOCHE -------------------------------------------------*/
+.btnNoche{
+    background-color: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.btnNoche::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 300ms ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.btnNoche>span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+/* ------------------------------------------------------- TITULOS ----------------------------------------------------- */
+.titulos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 1rem;
+}
+/* -------------------------------------------------- CONTENEDOR PRINCIPAL ----------------------------------------------*/
+.contenedorPrincipal{
+    display: flex; 
+    justify-content: space-around;
+
+
+}
+/* ------------------------------------------------- CONTENEDOR DE BALANCE ----------------------------------------------*/
+.contenedorBalance{
+    background-color: #5f45fd;
+    color: #F1F1F1;
+    width: 50%;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 15px;
+}
+/* --------------------------------------------- CONTENEDOR DE MOVIMIENTOS ----------------------------------------------*/
+.contenedorMov{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+
+}
