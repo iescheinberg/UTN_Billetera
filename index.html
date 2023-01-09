@@ -20,39 +20,54 @@
         </button>
     </div>
 
-    <div class="titulos">
-        <h2>Balance</h2>
-        <h2>Movimientos</h2>
-    </div>
+    <!-- <div class="titulos">
+        <div class="tituloBalance"><h2>Balance</h2></div>
+        <div class="tituloMov"><h2>Movimientos</h2></div>
+    </div> -->
 
     <div class="contenedorPrincipal">
         <div class="contenedorBalance">
-            <div class="contenedorDisponible">
-                <h2 class="disponible" id="disponible">$0.00</h2>
-                <p>Disponible</p>
+            <div class="tituloBalance">
+                <h2>Balance</h2>
             </div>
-            <div class="contenedorIngresos">
-                <h3 id="ingreso">$0.00</h3>
-                <p>Total Ingreso</p>
+            <div class="contenedorFondo">
+                <div class="contenedorDisponible">
+                    <h2 class="disponible" id="disponible">$0.00</h2>
+                    <p>Disponible</p>
+                </div>
+                <div class="contenedorIngresos">
+                    <h3 id="ingreso">$0.00</h3>
+                    <p>Total Ingreso</p>
+                </div>
+                <div class="contenedorGastos">
+                    <h3 id="gasto">$0.00</h3>
+                    <p>Total Gasto</p>
+                </div> 
             </div>
-            <div class="contenedorGastos">
-                <h3 id="gasto">$0.00</h3>
-                <p>Total Gasto</p>
-            </div> 
         </div>
         
         <div class="contenedorMov">
-            <div class="sumar">
-                <h3>Agregar Ingreso</h3>
-                <input type="number" name="addIngreso" id="addIngreso">
-                <i class="fa-solid fa-circle-plus"></i>
+            <div class="tituloMov"><h2>Movimientos</h2></div>
+            <div class="contenedorOperacion">
+                <div class="contenedorSuma">
+                    <div class="agregarIngreso">
+                        <h3>Agregar Ingreso</h3>
+                        <input type="number" name="addIngreso" id="addIngreso">
+                    </div>
+                    <div class="btnIngreso">
+                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                    </div>
+                </div>
+                <div class="contenedorResta">
+                    <div class="agregarGasto">
+                        <h3>Agregar Gasto</h3>
+                        <input type="number" name="addGasto" id="addGasto">
+                    </div>
+                    <div class="btnGasto">
+                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="restar">
-                <h3>Agregar Gasto</h3>
-                <input type="number" name="addGasto" id="addGasto">
-                <i class="fa-solid fa-circle-plus"></i>
-            </div>
-        </div>
     </div>
 </body>
 </html>
